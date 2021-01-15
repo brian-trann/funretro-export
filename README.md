@@ -17,12 +17,14 @@ npm install
 ## Exporting 
 - Must be in funretro-export directory
 - The filename will be the name of the board
+- The file will be exported to the parent directory
 ### Text File
 ```shell
 npm start -- "http://funretro.io/board..."
 ```
 
 ### CSV file
+- Only content with at least 1 vote will be included in this file output
 ```shell
 npm start -- "http://funretro.io/board..." "csv"
 ```
@@ -30,7 +32,7 @@ npm start -- "http://funretro.io/board..." "csv"
 ## TODO
 
 - Export card comments
-- More export options (PDF, CSV)
+- More export options (PDF)
 
 ## Licensing
 
