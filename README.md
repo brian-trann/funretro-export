@@ -12,7 +12,19 @@ It's required to have [npm](https://www.npmjs.com/get-npm) installed locally to 
 git clone https://github.com/julykaz/funretro-export.git
 cd funretro-export
 npm install
-npm start -- "http://funretro.io/board..." "../exported-file.txt"
+```
+
+## Exporting 
+- Must be in funretro-export directory
+- The filename will be the name of the board
+### Text File
+```shell
+npm start -- "http://funretro.io/board..."
+```
+
+### CSV file
+```shell
+npm start -- "http://funretro.io/board..." "csv"
 ```
 
 ## TODO
