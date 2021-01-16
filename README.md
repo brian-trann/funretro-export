@@ -18,7 +18,9 @@ npm install
 - Must be in funretro-export directory
 - The filename will be the name of the board
 - The file will be exported to the parent directory
+
 ### Text File
+- Exports a text file normally outputed by the original program
 ```shell
 npm start -- "http://funretro.io/board..."
 ```
