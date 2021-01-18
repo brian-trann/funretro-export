@@ -27,7 +27,11 @@ const renderCsv = (arr) => {
 
 	return csvString;
 };
+/**
+ * removeCommasInStr
+ * @param {*} str: 
+ * Returns: str
+ */
+const removeCommasInStr = (str) => str.replace(/,/g, '');
 
-module.exports = {
-	renderCsv : renderCsv
-};
+module.exports = { renderCsv, removeCommasInStr };

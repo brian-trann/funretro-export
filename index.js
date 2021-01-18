@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
-const { renderCsv } = require('./helpers');
+const { renderCsv, removeCommasInStr } = require('./helpers');
 const minVotes = 1;
 const [ url, fileType ] = process.argv.slice(2);
 
@@ -38,7 +38,7 @@ async function run() {
 		parsedObj['txt']['string'] += '\n';
 
 		csvColumn[columnTitle] = {
-			columnTitle,
+			columnTitle : removeCommasInStr(columnTitle),
 			messages    : []
 		};
 		categoryArr.push(csvColumn[columnTitle]);
@@ -53,7 +53,7 @@ async function run() {
 			const parsedVote = parseInt(votes);
 
 			if (parsedVote >= minVotes) {
-				csvColumn[columnTitle]['messages'].push(messageText);
+				csvColumn[columnTitle]['messages'].push(removeCommasInStr(messageText));
 			}
 		}
 	}

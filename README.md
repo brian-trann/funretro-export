@@ -24,8 +24,13 @@ npm install
 ```shell
 npm start -- "http://funretro.io/board..."
 ```
+- Alternatively, to be more explicit, `"txt"` can be passed in as well
+```shell
+npm start -- "http://funretro.io/board..." "txt"
+```
 
 ### CSV file
+- To generate a csv file, `"csv"` must be passed in after the URL
 - Only content with at least 1 vote will be included in this file output
 ```shell
 npm start -- "http://funretro.io/board..." "csv"
