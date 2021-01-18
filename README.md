@@ -31,6 +31,7 @@ npm start -- "http://funretro.io/board..." "txt"
 
 ### CSV file
 - To generate a csv file, `"csv"` must be passed in after the URL
+- Note: generating a csv file will remove commas from the columns and messages
 - Only content with at least 1 vote will be included in this file output
 ```shell
 npm start -- "http://funretro.io/board..." "csv"
