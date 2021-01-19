@@ -7,11 +7,21 @@
 ## Installing / Getting started
 
 It's required to have [npm](https://www.npmjs.com/get-npm) installed locally to follow the instructions.
+To clone the feature branch, follow the shell commands below.
 
 ```shell
-git clone https://github.com/julykaz/funretro-export.git
+git clone --branch feature-csv https://github.com/brian-trann/funretro-export.git
 cd funretro-export
 npm install
+```
+
+- to check which branch you are currently using
+```shell
+git branch
+```
+- to checkout the feature-csv branch
+```shell
+git checkout feature-csv
 ```
 
 ## Exporting 
